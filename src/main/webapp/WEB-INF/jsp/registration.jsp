@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -19,18 +20,32 @@
         <button class="registration__button-singin" type="button">Sing In</button>
         <button class="registration__button-singup" type="button">Sing Up</button>
       </div>
-      <form class="registration__form-singin" action="/login" method="post">
+      <form class="registration__form-singin" action="#" method="post">
         <label class="registration__label" for="email">Email:</label>
-        <input autocomplete="off" class="registration__input" type="email" id="email" name="email" required>
+        <input autocomplete="off" class="registration__input" type="email" id="email" name="email" value="${param.email}" required>
 
         <label class="registration__label" for="password">Пароль:</label>
         <input autocomplete="off" class="registration__input" type="password" id="password" name="password" required>
 
         <button class="registration__button" type="submit">Войти</button>
+        <c:if test="${param.error != null}">
+          <div>
+            <span class="error-message">Email or password is not correct</span>
+          </div>
+        </c:if>
+        <style>
+          .error-message {
+            position: absolute;
+            top: 47%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #8e56be;
+          }
+        </style>
       </form>
 
 
-      <form class="registration__form-singup" action="/registration" method="post">
+      <form class="registration__form-singup" action="#" method="post">
         <label class="registration__label" for="username">Имя пользователя:</label>
         <input autocomplete="off" class="registration__input" type="text" id="username" name="username" required>
 
@@ -45,7 +60,7 @@
     </div>
   </div>
 </div>
-<script src="webapp/front/js/app.min.js?_v=20230827174710"></script>
-</body>
 
+<script src="../../front/js/app.min.js?_v=20230827174710"></script>
+</body>
 </html>

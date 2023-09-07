@@ -5,6 +5,10 @@ import org.devmasters.wisebladeweb.isswmq.entity.Role;
 import org.devmasters.wisebladeweb.isswmq.entity.User;
 import org.devmasters.wisebladeweb.isswmq.util.ConnectionManager;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Optional;
 
 import static java.sql.Statement.*;
@@ -13,10 +17,23 @@ public class UserDao implements Dao<Integer, User> {
     private static final UserDao INSTANCE = new UserDao();
 
     private static final String SAVE_SQL = "INSERT INTO wisebladeweb.wisebladelog.users (name, email, password, role) VALUES (?, ?, ?, ?)";
+    private static final String GET_BY_EMAIL_AND_PASSWORD = "SELECT * FROM wisebladeweb.wisebladelog.users WHERE email = ? AND password = ?";
 
-    @Override
-    public Optional<User> findById(Integer id) {
-        return Optional.empty();
+    @SneakyThrows
+    public Optional<User> findByEmailAndPassword(String email, String password) {
+        try (var connection = ConnectionManager.get()){
+            var statement = connection.prepareStatement(GET_BY_EMAIL_AND_PASSWORD);
+            statement.setString(1, email);
+            statement.setString(2, password);
+
+            var resultSet = statement.executeQuery();
+            User user = null;
+            if(resultSet.next()){
+                user = buildEntity(resultSet);
+            }
+
+            return Optional.ofNullable(user);
+        }
     }
 
     @Override
@@ -37,6 +54,17 @@ public class UserDao implements Dao<Integer, User> {
 
             return entity;
         }
+    }
+
+
+    private User buildEntity(ResultSet resultSet) throws SQLException {
+        return User.builder()
+                .id(resultSet.getObject("id", Integer.class))
+                .name(resultSet.getObject("name", String.class))
+                .email(resultSet.getObject("email", String.class))
+                .password(resultSet.getObject("password", String.class))
+                .role(Role.valueOf(resultSet.getObject("role", String.class)))
+                .build();
     }
 
     public static UserDao getInstance(){

@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <!-- <style>body{opacity: 0;}</style> -->
-    <link rel="stylesheet" href="front/css/style.min.css?_v=20230827230143">
+    <link rel="stylesheet" href="front/css/style.min.css?_v=20230906205856">
     <link rel="shortcut icon" href="front/favicon.ico">
     <!-- <meta name="robots" content="noindex, nofollow"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,17 +17,17 @@
 <div class="wrapper">
     <header class="header">
         <div class="header__container">
-            <div class="header__column header__column_logo">
+            <div class="header__column header__column--logo">
                 <a href="front/home.html" class="header__logo">WiseBlade</a>
             </div>
-            <div class="header__column header__column_menu">
+            <div class="header__column header__column--menu">
                 <div class="header__menu menu">
                     <button type="button" class="menu__icon icon-menu"><span></span></button>
                     <nav class="menu__body">
                         <ul class="menu__list">
-                            <li class="menu__item"><a target="_blank" href="https://t.me/Isswmq" class="menu__link">Поддержка</a></li>
-                            <li class="menu__item"><a target="_blank" href="https://github.com/Isswmq" class="menu__link">Отзывы</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Приобрести</a></li>
+                            <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646" class="menu__link">Поддержка</a></li>
+                            <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646?z=photo212566646_457245723%2Fphotos212566646" class="menu__link">Отзывы</a></li>
+                            <li class="menu__item"><a href="front/buypage.html" class="menu__link">Приобрести</a></li>
                             <li class="menu__item"><a href="front/regist.html" class="menu__link">Вход/Регистрация</a></li>
                         </ul>
                     </nav>
@@ -36,7 +36,7 @@
 
         </div>
     </header>
-    <main class="page">
+    <main class="mainpage">
         <div data-fullscreen class="possibilities">
             <div class="possibilities__container">
                 <div class="possibilities__items">
@@ -48,64 +48,61 @@
                         <picture><source srcset="front/img/hoodcheat.webp" type="image/webp"><img src="front/img/hoodcheat.webp" alt=""></picture>
                     </div>
                 </div>
-                <button type="button" class="possibilities__buy-button">Купить</button>
+                <a href="front/buypage.html" class="possibilities__buy-button">Купить</a>
             </div>
 
         </div>
-        <div class="advantages-titles">
-            <div class="advantages-titles__container">
-                <h2 class="advantages-titles__title">Наши приемущества</h2>
-                <div class="advantages-titles__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi dolore vero soluta amet magnam nisi.</div>
-            </div>
-        </div>
+        <div class="mainpage__advantages advantages-page">
+            <div class="advantages-page__container">
 
-        <div class="item-advantages">
-            <div class="item-advantages__container">
-                <div class="item-advantages__items">
-                    <div class="item-advantages__item">
-                        <div class="item-advantages__text">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, minus! Quos, reprehenderit facere. Iure natus numquam maxime magni fugiat quisquam illo illum minus incidunt ducimus, laboriosam aspernatur sequi optio itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eligendi aspernatur voluptates distinctio dignissimos mollitia, atque impedit expedita aliquam a pariatur. Nihil enim ea doloribus laborum maiores harum voluptates. Sunt.</p>
+                <div class="advantages-page__titles advantages-titles">
+                    <h2 class="advantages-titles__title">Наши приемущества</h2>
+                    <div class="advantages-titles__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi dolore vero soluta amet magnam nisi.</div>
+                </div>
+
+                <div class="advantages-page__slider">
+                    <div class="advantages-page__swiper">
+                        <div class="advantages-page__slide slide-advantages-page">
+                            <div class="slide-advantages-page__content">
+                                <div class="slide-advantages-page__text">
+                                    <h2>Lorem ipsum dolor sit.</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, minus! Quos, reprehenderit facere. Iure natus numquam maxime magni fugiat quisquam illo illum minus incidunt ducimus, laboriosam aspernatur sequi optio itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eligendi aspernatur voluptates distinctio dignissimos mollitia, atque impedit expedita aliquam a pariatur. Nihil enim ea doloribus laborum maiores harum voluptates. Sunt.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="slide-advantages-page__image-ibg">
+                                <picture><source data-srcset="front/img/code.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="front/img/code.jpeg" alt="Image"></picture>
+                            </a>
+                        </div>
+                        <div class="advantages-page__slide slide-advantages-page">
+                            <div class="slide-advantages-page__content">
+                                <div class="slide-advantages-page__text">
+                                    <h2>Lorem ipsum dolor sit.</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, minus! Quos, reprehenderit facere. Iure natus numquam maxime magni fugiat quisquam illo illum minus incidunt ducimus, laboriosam aspernatur sequi optio itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eligendi aspernatur voluptates distinctio dignissimos mollitia, atque impedit expedita aliquam a pariatur. Nihil enim ea doloribus laborum maiores harum voluptates. Sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ut, soluta delectus nemo quidem quasi dolorem doloribus obcaecati, sunt esse porro itaque quod. Maxime qui delectus perferendis quaerat possimus quasi.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="slide-advantages-page__image-ibg">
+                                <picture><source data-srcset="front/img/cover.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="/image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="front/img/cover.jpg" alt="Image"></picture>
+                            </a>
+                        </div>
+                        <div class="advantages-page__slide slide-advantages-page">
+                            <div class="slide-advantages-page__content">
+                                <div class="slide-advantages-page__text">
+                                    <h2>Lorem ipsum dolor sit.</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, minus! Quos, reprehenderit facere. Iure natus numquam maxime magni fugiat quisquam illo illum minus incidunt ducimus, laboriosam aspernatur sequi optio itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eligendi aspernatur voluptates distinctio dignissimos mollitia, atque impedit expedita aliquam a pariatur. Nihil enim ea doloribus laborum maiores harum voluptates. Sunt.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="slide-advantages-page__image-ibg">
+                                <picture><source data-srcset="front/img/hack.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="front/img/hack.jpg" alt="Image"></picture>
+                            </a>
                         </div>
                     </div>
-                    <div class="item-advantages__item">
-                        <picture><source srcset="front/img/code.webp" type="image/webp"><img src="front/img/code.jpeg" class="item-advantages__image" alt=""></picture>
-                    </div>
+                    <div class="advantages-page__controll"></div>
                 </div>
+
             </div>
         </div>
 
-        <div class="item-advantages">
-            <div class="item-advantages__container">
-                <div class="item-advantages__items">
-                    <div class="item-advantages__item">
-                        <div class="item-advantages__text">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, minus! Quos, reprehenderit facere. Iure natus numquam maxime magni fugiat quisquam illo illum minus incidunt ducimus, laboriosam aspernatur sequi optio itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eligendi aspernatur voluptates distinctio dignissimos mollitia, atque impedit expedita aliquam a pariatur. Nihil enim ea doloribus laborum maiores harum voluptates. Sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ut, soluta delectus nemo quidem quasi dolorem doloribus obcaecati, sunt esse porro itaque quod. Maxime qui delectus perferendis quaerat possimus quasi.</p>
-                        </div>
-                    </div>
-                    <div class="item-advantages__item">
-                        <picture><source srcset="front/img/background/backgrPossibl.webp" type="image/webp"><img src="front/img/background/backgrPossibl.jpg" class="item-advantages__image" alt=""></picture>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="item-advantages">
-            <div class="item-advantages__container">
-                <div class="item-advantages__items">
-                    <div class="item-advantages__item">
-                        <div class="item-advantages__text">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, minus! Quos, reprehenderit facere. Iure natus numquam maxime magni fugiat quisquam illo illum minus incidunt ducimus, laboriosam aspernatur sequi optio itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eligendi aspernatur voluptates distinctio dignissimos mollitia, atque impedit expedita aliquam a pariatur. Nihil enim ea doloribus laborum maiores harum voluptates. Sunt.</p>
-                        </div>
-                    </div>
-                    <div class="item-advantages__item">
-                        <picture><source srcset="front/img/hack.webp" type="image/webp"><img src="front/img/hack.jpg" class="item-advantages__image" alt=""></picture>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
         <div class="gameplay-example">
@@ -140,7 +137,6 @@
 </div>
 -->
 
-<script src="front/js/app.min.js?_v=20230827230143"></script>
+<script src="front/js/app.min.js?_v=20230906205856"></script>
 </body>
-
 </html>
