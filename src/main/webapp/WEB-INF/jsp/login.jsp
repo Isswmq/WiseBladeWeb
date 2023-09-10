@@ -1,9 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ru">
 
 <head>
-    <title>Вход/Регистрация</title>
+    <title>Вход</title>
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <!-- <style>body{opacity: 0;}</style> -->
@@ -27,7 +28,7 @@
                         <ul class="menu__list">
                             <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646" class="menu__link">Поддержка</a></li>
                             <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646?z=photo212566646_457245723%2Fphotos212566646" class="menu__link">Отзывы</a></li>
-                            <li class="menu__item"><a href="/buypage" class="menu__link">Купить</a></li>
+                            <li class="menu__item"><a href="/buypage.html" class="menu__link">Купить</a></li>
                             <li class="menu__item"><a href="/login" class="menu__link">Войти</a></li>
                             <li class="menu__item"><a href="/registration" class="menu__link">Зарегистрироваться</a></li>
                         </ul>
@@ -40,25 +41,30 @@
     <div data-fullscreen class="registration">
         <div class="registration__container registration__container_narrow">
             <div class="registration__body">
-                <!-- <div class="registration__button-block">
-                    <button class="registration__button-singin" type="button">Sing In</button>
 
-                </div> -->
-
-                <form class="registration__form-singup" action="/registration" method="post">
-                    <label class="registration__label" for="username">Имя пользователя:</label>
-                    <input autocomplete="off" class="registration__input" type="text" id="username" name="username" required>
-
+                <form class="registration__form-singin" action="/login" method="post">
                     <label class="registration__label" for="email">Email:</label>
-                    <input autocomplete="off" class="registration__input" type="email" id="email" name="email" required>
+                    <input autocomplete="off" class="registration__input" type="email" id="email" name="email" value="${param.email}" required>
 
                     <label class="registration__label" for="password">Пароль:</label>
                     <input autocomplete="off" class="registration__input" type="password" id="password" name="password" required>
 
-                    <button class="registration__button" type="submit">Зарегистрироваться</button>
+                    <button class="registration__button" type="submit">Войти</button>
+                    <c:if test="${param.error != null}">
+                        <div>
+                            <span class="error-message">Email or password is not correct</span>
+                        </div>
+                    </c:if>
+                    <style>
+                        .error-message {
+                            position: absolute;
+                            top: 41%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            color: #8e56be;
+                        }
+                    </style>
                 </form>
-
-
             </div>
         </div>
     </div>

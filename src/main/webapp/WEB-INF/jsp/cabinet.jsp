@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <!-- <style>body{opacity: 0;}</style> -->
-    <link rel="stylesheet" href="../../front/css/style.min.css?_v=20230906205856">
+    <link rel="stylesheet" href="../../front/css/style.min.css?_v=20230910201050">
     <link rel="shortcut icon" href="../../front/favicon.ico">
     <!-- <meta name="robots" content="noindex, nofollow"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,8 +27,9 @@
                         <ul class="menu__list">
                             <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646" class="menu__link">Поддержка</a></li>
                             <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646?z=photo212566646_457245723%2Fphotos212566646" class="menu__link">Отзывы</a></li>
-                            <li class="menu__item"><a href="../../front/buypage.html" class="menu__link">Приобрести</a></li>
-                            <li class="menu__item"><a href="../../front/regist.html" class="menu__link">Вход/Регистрация</a></li>
+                            <li class="menu__item"><a href="../../front/buypage.html" class="menu__link">Купить</a></li>
+                            <li class="menu__item"><a href="../../front/login.html" class="menu__link">Войти</a></li>
+                            <li class="menu__item"><a href="../../front/regist.html" class="menu__link">Зарегистрироваться</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -58,7 +59,7 @@
         </div>
     </div>
 </div>
-<script src="../../front/js/app.min.js?_v=20230906205856"></script>
+<script src="../../front/js/app.min.js?_v=20230910201050"></script>
 </body>
 
 </html>

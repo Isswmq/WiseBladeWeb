@@ -229,11 +229,11 @@ body {
     flex-direction: column;
   }
 }
-.menu__item:last-child a {
+.menu__item:last-child a, .menu__item:nth-child(4) a {
   background-color: #a011a2;
 }
 @media (any-hover: hover) {
-  .menu__item:last-child a:hover {
+  .menu__item:last-child a:hover, .menu__item:nth-child(4) a:hover {
     transition: all 0.3s ease 0s;
     background-color: #840d86;
     color: #fff;
@@ -756,58 +756,10 @@ body {
   -moz-box-shadow: 5px 5px 5px -5px rgba(86, 86, 86, 0.6) inset;
   box-shadow: 5px 5px 5px -5px rgba(86, 86, 86, 0.6) inset;
 }
-.registration__button-block {
+.registration .registration__form-singup,
+.registration .registration__form-singin {
   display: flex;
-  gap: 20px;
-  color: #545353;
-}
-@media (max-width: 47.99875em) {
-  .registration__button-block {
-    justify-content: center;
-  }
-}
-.registration__button-block:not(:last-child) {
-  margin-bottom: 50px;
-}
-.registration__button-block button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: all 0.3s ease 0s;
-  border: 2px solid rgba(22, 22, 22, 0);
-}
-@media (min-width: 75em) {
-  .registration__button-block button {
-    font-size: 1.875rem;
-  }
-}
-@media (min-width: 20em) and (max-width: 75em) {
-  .registration__button-block button {
-    font-size: clamp( 1.25rem , 1.0227272727rem  +  1.1363636364vw , 1.875rem );
-  }
-}
-@media (max-width: 20em) {
-  .registration__button-block button {
-    font-size: 1.25rem;
-  }
-}
-@media (any-hover: hover) {
-  .registration__button-block button:hover, .registration__button-block button:focus {
-    outline: none;
-    border: 2px solid rgba(52, 199, 89, 0.5568627451);
-  }
-}
-.registration__button-block button._included {
-  background-color: #34c759;
-  color: #161616;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-.registration__form-singup, .registration__form-singin {
-  display: none;
   flex-direction: column;
-}
-.registration__form-singup._included, .registration__form-singin._included {
-  display: flex;
 }
 .registration__label {
   transition: all 0.3s ease 0s;

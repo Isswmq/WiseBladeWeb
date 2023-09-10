@@ -2,11 +2,11 @@
 <html lang="ru">
 
 <head>
-	<title>Вход/Регистрация</title>
+	<title>Регистрация</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230906205856">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230910201050">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__column header__column--logo">
-					<a href="home.html" class="header__logo">WiseBlade</a>
+					<a href="../home.html" class="header__logo">WiseBlade</a>
 				</div>
 				<div class="header__column header__column--menu">
 					<div class="header__menu menu">
@@ -26,8 +26,9 @@
 							<ul class="menu__list">
 								<li class="menu__item"><a target="_blank" href="https://vk.com/id212566646" class="menu__link">Поддержка</a></li>
 								<li class="menu__item"><a target="_blank" href="https://vk.com/id212566646?z=photo212566646_457245723%2Fphotos212566646" class="menu__link">Отзывы</a></li>
-								<li class="menu__item"><a href="buypage.html" class="menu__link">Приобрести</a></li>
-								<li class="menu__item"><a href="regist.html" class="menu__link">Вход/Регистрация</a></li>
+								<li class="menu__item"><a href="buypage.html" class="menu__link">Купить</a></li>
+								<li class="menu__item"><a href="login.html" class="menu__link">Войти</a></li>
+								<li class="menu__item"><a href="regist.html" class="menu__link">Зарегистрироваться</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -38,20 +39,10 @@
 		<div data-fullscreen class="registration">
 			<div class="registration__container registration__container_narrow">
 				<div class="registration__body">
-					<div class="registration__button-block">
-						<button class="registration__button-singin" type="button">Sing In</button>
-						<button class="registration__button-singup" type="button">Sing Up</button>
-					</div>
-					<form class="registration__form-singin" action="#" method="post">
-						<label class="registration__label" for="email">Email:</label>
-						<input autocomplete="off" class="registration__input" type="email" id="email" name="email" required>
-
-						<label class="registration__label" for="password">Пароль:</label>
-						<input autocomplete="off" class="registration__input" type="password" id="password" name="password" required>
-
-						<button class="registration__button" type="submit">Войти</button>
-					</form>
-
+					<!-- <div class="registration__button-block">
+                        <button class="registration__button-singin" type="button">Sing In</button>
+                        
+                    </div> -->
 
 					<form class="registration__form-singup" action="#" method="post">
 						<label class="registration__label" for="username">Имя пользователя:</label>
@@ -71,7 +62,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230906205856"></script>
+	<script src="js/app.min.js?_v=20230910201050"></script>
 </body>
 
 </html>

@@ -20,7 +20,7 @@ public class AuthorizationServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher(JspHelper.getPath("registration")).forward(req, resp);
+        req.getRequestDispatcher(JspHelper.getPath("login")).forward(req, resp);
     }
 
     @Override

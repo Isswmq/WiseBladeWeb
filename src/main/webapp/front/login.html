@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Личный кабинет</title>
+	<title>Вход</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="userpage">
+<body class="registr">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -36,25 +36,20 @@
 
 			</div>
 		</header>
-		<div data-fullscreen class="cabinet">
-			<div class="cabinet__container cabinet__container-medium">
-				<div class="cabinet__user-block">
-					<div class="user-info">
-						<div class="user-info__line user-info__line--name"><span>Name</span><span>IlyaSexWhithMilf</span></div>
-						<div class="user-info__line user-info__line--email"><span>Email</span><span>dealplug72@gmail.com</span></div>
-						<div class="user-info__line user-info__line--date"><span>Date of registration</span><span>11.08.2004</span></div>
-						<div class="user-info__line user-info__line--status"><span>Status</span><span>User</span></div>
-					</div>
-					<div class="user-button">
-						<button class="user-button__change-pass" type="button">Сменить пароль</button>
-						<button class="user-button__change-exit" type="button">Выйти</button>
-					</div>
+		<div data-fullscreen class="registration">
+			<div class="registration__container registration__container_narrow">
+				<div class="registration__body">
+
+					<form class="registration__form-singin" action="#" method="post">
+						<label class="registration__label" for="email">Email:</label>
+						<input autocomplete="off" class="registration__input" type="email" id="email" name="email" required>
+
+						<label class="registration__label" for="password">Пароль:</label>
+						<input autocomplete="off" class="registration__input" type="password" id="password" name="password" required>
+
+						<button class="registration__button" type="submit">Войти</button>
+					</form>
 				</div>
-				<form class="cabinet__form form" action="">
-					<label class="form__label" for="activation-key">Ключ активации</label>
-					<input autocomplete="off" type="text" id="activation-key" name="activation-key" data-error="Ошибка" placeholder="7777777" class="input form__input">
-					<button class="form__button" type="submit">Активировать</button>
-				</form>
 			</div>
 		</div>
 	</div>

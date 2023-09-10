@@ -34,14 +34,6 @@ dependencies {
     implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.27'
 }
 
-allprojects {
-    apply plugin: 'java'
-
-    tasks.withType(Copy).all {
-        duplicatesStrategy 'exclude'
-    }
-}
-
 test {
     useJUnitPlatform()
 }
