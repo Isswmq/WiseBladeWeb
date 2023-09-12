@@ -28,7 +28,7 @@
                         <ul class="menu__list">
                             <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646" class="menu__link">Поддержка</a></li>
                             <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646?z=photo212566646_457245723%2Fphotos212566646" class="menu__link">Отзывы</a></li>
-                            <li class="menu__item"><a href="/buypage.html" class="menu__link">Купить</a></li>
+                            <li class="menu__item"><a href="/buypage" class="menu__link">Купить</a></li>
                             <li class="menu__item"><a href="/login" class="menu__link">Войти</a></li>
                             <li class="menu__item"><a href="/registration" class="menu__link">Зарегистрироваться</a></li>
                         </ul>

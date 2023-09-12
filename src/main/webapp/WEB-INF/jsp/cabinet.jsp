@@ -2,7 +2,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ru">
-
 <c:choose>
     <c:when test="${not empty sessionScope.user}">
         <head>
@@ -29,7 +28,7 @@
                                 <ul class="menu__list">
                                     <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646" class="menu__link">Поддержка</a></li>
                                     <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646?z=photo212566646_457245723%2Fphotos212566646" class="menu__link">Отзывы</a></li>
-                                    <li class="menu__item"><a href="../../front/buypage.html" class="menu__link">Купить</a></li>
+                                    <li class="menu__item"><a href="/buypage" class="menu__link">Купить</a></li>
                                     <!-- <li class="menu__item"><a href="../../front/login.html" class="menu__link">Войти</a></li> -->
                                     <!-- <li class="menu__item"><a href="../../front/regist.html" class="menu__link">Зарегистрироваться</a></li> -->
                                 </ul>
@@ -50,7 +49,7 @@
                         </div>
                         <div class="user-button">
                             <button class="user-button__change-pass" type="button">Сменить пароль</button>
-                            <button class="user-button__change-exit" type="button" onclick="window.location.href = '/logout'" >Выйти</button>
+                            <button class="user-button__change-exit" type="submit" onclick="window.location.href = '/logout'" >Выйти</button>
                         </div>
                     </div>
                     <form class="cabinet__form form" action="">

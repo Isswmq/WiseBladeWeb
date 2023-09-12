@@ -35,7 +35,7 @@ public class AuthorizationServlet extends HttpServlet {
     @SneakyThrows
     private void onLoginSuccess(UserDto user, HttpServletRequest req, HttpServletResponse resp){
         req.getSession().setAttribute("user", user);
-        resp.sendRedirect("/profile");
+        resp.sendRedirect("http://localhost:8080");
     }
 
     @SneakyThrows

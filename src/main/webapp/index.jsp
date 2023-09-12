@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -25,11 +26,21 @@
                     <button type="button" class="menu__icon icon-menu"><span></span></button>
                     <nav class="menu__body">
                         <ul class="menu__list">
-                            <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646" class="menu__link">Поддержка</a></li>
-                            <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646?z=photo212566646_457245723%2Fphotos212566646" class="menu__link">Отзывы</a></li>
-                            <li class="menu__item"><a href="/buypage" class="menu__link">Купить</a></li>
-                            <li class="menu__item"><a href="/login" class="menu__link">Войти</a></li>
-                            <li class="menu__item"><a href="/registration" class="menu__link">Зарегистрироваться</a></li>
+                            <c:choose>
+                                <c:when test="${empty sessionScope.user}">
+                                    <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646" class="menu__link">Поддержка</a></li>
+                                    <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646?z=photo212566646_457245723%2Fphotos212566646" class="menu__link">Отзывы</a></li>
+                                    <li class="menu__item"><a href="/buypage" class="menu__link">Купить</a></li>
+                                    <li class="menu__item"><a href="/login" class="menu__link">Войти</a></li>
+                                    <li class="menu__item"><a href="/registration" class="menu__link">Зарегистрироваться</a></li>
+                                </c:when>
+                                <c:otherwise>
+                                    <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646" class="menu__link">Поддержка</a></li>
+                                    <li class="menu__item"><a target="_blank" href="https://vk.com/id212566646?z=photo212566646_457245723%2Fphotos212566646" class="menu__link">Отзывы</a></li>
+                                    <li class="menu__item"><a href="/buypage" class="menu__link">Купить</a></li>
+                                    <li class="menu__item"><a href="/profile" class="menu__link">Личный Кабинет</a></li>
+                                </c:otherwise>
+                            </c:choose>
                         </ul>
                     </nav>
                 </div>
