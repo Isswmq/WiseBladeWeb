@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:postgresql://localhost:5433/postgres</property>
+        <property name="connection.username">isswmq</property>
+        <property name="connection.password">isswmqcoder16</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+        <!-- <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.jcache.internal.JCacheDomainDataRegionImpl</property> -->
+
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+
+        <mapping class = "org.isswmq.wisebladehibernate.entity.User"/>
+
+       <!-- <mapping class = "org.isswmq.entity.Company"/>
+        <mapping class = "org.isswmq.entity.Profile"/>
+        <mapping class = "org.isswmq.entity.Chat"/>
+
+
+        <property name="hibernate.hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
