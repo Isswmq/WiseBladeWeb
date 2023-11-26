@@ -19,7 +19,7 @@
     <header class="header">
         <div class="header__container">
             <div class="header__column header__column--logo">
-                <a href="front/home.html" class="header__logo">WiseBlade</a>
+                <a href="/" class="header__logo">WiseBlade</a>
             </div>
             <div class="header__column header__column--menu">
                 <div class="header__menu menu">
@@ -57,7 +57,7 @@
                         <div class="possibilities__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos inventore quae, explicabo delectus earum ipsa, blanditiis esse officiis perspiciatis excepturi consequuntur nulla quisquam eius molestias illum magnam eligendi porro harum?</div>
                     </div>
                     <div class="possibilities__item">
-                        <picture><source srcset="front/img/hoodcheat.webp" type="image/webp"><img src="front/img/hoodcheat.webp" alt=""></picture>
+<%--                        <picture><source srcset="front/img/hoodcheat.webp" type="image/webp"><img src="front/img/hoodcheat.webp" alt=""></picture>--%>
                     </div>
                 </div>
                 <a href="front/buypage.html" class="possibilities__buy-button">Купить</a>

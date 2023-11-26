@@ -7,9 +7,9 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class User {
-    private Integer id;
-    private String name;
-    private String email;
-    private String password;
-    private Role role;
+        private Integer id;
+        private String name;
+        private String email;
+        private String password;
+        private Role role;
 }

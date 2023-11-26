@@ -19,7 +19,7 @@
     <header class="header">
         <div class="header__container">
             <div class="header__column header__column--logo">
-                <a href="../../front/home.html" class="header__logo">WiseBlade</a>
+                <a href="/" class="header__logo">WiseBlade</a>
             </div>
             <div class="header__column header__column--menu">
                 <div class="header__menu menu">
